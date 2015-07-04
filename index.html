@@ -34,7 +34,7 @@
 
 
     <script type="text/javascript">
-      var pathObj = {
+      var logo = {
           "logo_osusowake_1": {
               "strokepath": [
                   {
@@ -81,7 +81,7 @@
           }
       };
 
-        var pathObj2 = {
+        var yuge = {
             "yuge": {
                 "strokepath": [
                     {
@@ -96,7 +96,7 @@
             }
         };
 
-        var pathObj3 = {
+        var yugeR = {
             "yugeR": {
                 "strokepath": [
                     {
@@ -111,7 +111,7 @@
             }
         };
 
-        var pathObj4 = {
+        var yugeL = {
             "yugeL": {
                 "strokepath": [
                     {
@@ -129,21 +129,21 @@
      $(document).ready(function(){
              $('#logo_osusowake_1').lazylinepainter(
              {
-                "svgData": pathObj,
+                "svgData": logo,
                 "strokeWidth": 2,
                 "strokeColor": "#ff6347"
               }).lazylinepainter('paint');
 
               $('#yuge').lazylinepainter(
               {
-                 "svgData": pathObj2,
+                 "svgData": yuge,
                  "strokeWidth": 2,
                  "strokeColor": "#e09b99"
              }).lazylinepainter('paint');
 
              $('#yugeL').lazylinepainter(
              {
-                "svgData": pathObj4,
+                "svgData": yugeL,
                 "strokeWidth": 2,
                 "strokeColor": "#e09b99"
             }).lazylinepainter('paint');
@@ -152,7 +152,7 @@
               function(){
                 $('#yugeR').lazylinepainter(
                 {
-                   "svgData": pathObj3,
+                   "svgData": yugeR,
                    "strokeWidth": 2,
                    "strokeColor": "#e09b99"
                 }).lazylinepainter('paint');
