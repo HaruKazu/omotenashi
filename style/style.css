@@ -64,6 +64,7 @@ h1{
 /* TOPページのcss */
 #headerTitle{
 	margin: 100px 0 40px 0;
+	position: relative;
 }
 
 #logo_osusowake_1{
@@ -95,7 +96,22 @@ h1{
 	background-position: right;
 }
 
+#yuge{
+	position: absolute;
+  top: 0px;
+  right: 0;
+}
 
+#yuge2{
+	position: absolute;
+	right: 25px;
+	top: -100px;
+}
+
+#yugR{
+	position: absolute;
+	top: -70px;
+}
 
 /* 詳細ページのcss */
 #osusowakeImage{
