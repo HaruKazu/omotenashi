@@ -73,9 +73,6 @@ h1{
 	margin: 0 auto;
 }
 
-{
-
-}
 #pass,
 #get{
 	padding: 10px;
@@ -95,6 +92,7 @@ h1{
 	height: 185px;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: right;
 }
 
 
