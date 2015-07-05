@@ -6,9 +6,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery.lazylinepainter-1.4.1.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
 
     <link rel="stylesheet" href="./style/style.css" type="text/css">
-
   </head>
   <body>
     <div id="headerTitle">
@@ -17,20 +17,21 @@
       <div id="yugeL"　class="lazy-line"></div>
       <div id="yugeR"　class="lazy-line"></div>
     </div>
-
-    <div id="contents">
-
-      <div id="leftHand" class="left">
-
-      </div>
-      <div id="rightHand" class="right">
-
+    <div id='title_screen'>
+      <div style='text-align:center;width:100%;'>
+        <img src='image/susoko.png' />
       </div>
 
-      <div class="center">
-          <a href="#" class="myButton">わたす</a>
-          <a href="#" class="myButton">もらう</a>
+      <div id="contents">
+        <div id="leftHand" class="left">
+
+        </div>
+        <div id="rightHand" class="right">
+        </div>
       </div>
+    </div>
+    <div id='next_screen' style='display:hidden;opacity:0.0;'>
+      <input placeholder='駅名検索'/>
     </div>
 
 
@@ -160,6 +161,11 @@
             },500);
 
              });
+      d3.select('#title_screen').style('opacity',1.0).transition().delay(12000).duration(4000).style('opacity',0.0).transition().style('display','none').each('end',function()
+      {
+        d3.select('#next_screen').style('display','block').transition().style('opacity',1.0);
+      });
+
     </script>
   </body>
 </html>
